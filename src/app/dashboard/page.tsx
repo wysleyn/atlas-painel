@@ -19,9 +19,9 @@ export default function Dashboard() {
     }
 
     async function carregarDados() {
-      const { data: users, error } = await supabase
-        .from("users")
-        .select("*")
+    const { data: users, error } = await supabase
+  .from("users")
+  .select("id")
 
       console.log("USERS:", users)
 

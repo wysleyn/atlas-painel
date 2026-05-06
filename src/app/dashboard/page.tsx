@@ -23,7 +23,7 @@ export default function Dashboard() {
     async function carregarDados() {
     const { data: users, error } = await supabase
   .from("users")
-  .select("id")
+  .select("*")
 
       console.log("USERS:", users)
 

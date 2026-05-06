@@ -9,7 +9,7 @@ export default function Dashboard() {
   const [indicacoes, setIndicacoes] = useState<number>(0)
 
   useEffect(() => {
-
+console.log("SUPABASE URL:", process.env.NEXT_PUBLIC_SUPABASE_URL)
     async function carregarDados() {
 
       const { data } = await supabase
